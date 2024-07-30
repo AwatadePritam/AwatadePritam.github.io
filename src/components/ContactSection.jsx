@@ -56,12 +56,12 @@ const ContactSection = () => {
   };
 
   return (
-    <Flex id="contact-me" py={10} px={5} mx="auto" w={"100%"} justifyContent={"center"} alignItems={"center"} direction={"column"} p={"10px"}>
+    <Flex id="contact-me"   mx="auto" w={"100%"} padding={'30px 0px'} justifyContent={"center"} alignItems={"center"} direction={"column"} p={"10px"}>
       <Heading as="h2" size="xl" mb={6} textAlign="center">
         Contact Me
       </Heading>
 
-      <Flex w={["90%", "90%", "90%", "80%"]} gap={'30px'} alignItems={"center"} justifyContent={"center"}>
+      <Flex w={["90%", "90%", "90%", "80%"]} gap={'30px'} alignItems={"center"} justifyContent={"center"}  padding={'30px 0px'}>
         {!emailSent ? (
           <Flex as="form" w={["100%", "100%", "100%", "50%"]} onSubmit={handleSubmit} shadow="md" borderWidth="1px" borderRadius="md" textAlign="center" _hover={{ boxShadow: 'lg' }} padding={"20px"}>
             <Stack spacing={5} w={'100%'}>

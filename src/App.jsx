@@ -44,6 +44,7 @@ function App() {
       <Box   className='section' id="contact" w={'100%'}>
         <ContactSection />
       </Box>
+      <Footer/>
     </Flex>
   );
 }
