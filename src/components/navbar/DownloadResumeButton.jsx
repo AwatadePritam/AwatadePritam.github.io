@@ -29,10 +29,10 @@ const DownloadResumeButton = () => {
       bg: hoverBgColor,
       color: hoverColor,
     }}
-    padding={'0px 10px'}
-    pl={'20px'}
+    padding={'0px 8px'}
+    pl={'10px'}
     rounded={'lg'}
-    fontSize={['md', 'lg', 'xl', 'xl']}
+    fontSize={['md', 'lg', 'lg', 'lg']}
   >
     <Flex justifyContent={'space-between'} alignItems={'center'}>
       <Text>Resume</Text>

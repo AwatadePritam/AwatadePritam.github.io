@@ -59,8 +59,8 @@ const GitHubStatistics = ({ username }) => {
       <Heading as="h2" size="xl" mb={6} textAlign="center">
         GitHub Statistics
       </Heading>
-      <Flex direction={"column"} gap={'40px'} textAlign="center">
-        <Flex direction={'column'} alignItems={'center'} justifyContent={'center'} gap={'8px'}>
+      <Flex direction={"column"} gap={'40px'} textAlign="center" >
+        <Flex direction={'column'} alignItems={'center'} justifyContent={'center'} gap={'8px'}  data-aos="zoom-in-up"cursor={'pointer'} >
           <Heading as="h3" size="lg">
             Most Used Languages
           </Heading>
@@ -71,7 +71,7 @@ const GitHubStatistics = ({ username }) => {
             shadow="md"
           />
         </Flex>
-        <Flex direction={'column'} alignItems={'center'} justifyContent={'center'} gap={'8px'}>
+        <Flex direction={'column'} alignItems={'center'} justifyContent={'center'} gap={'8px'}  data-aos="zoom-in-up" cursor={'pointer'}>
           <Heading as="h3" size="lg">
             Streak Stats
           </Heading>
@@ -82,7 +82,7 @@ const GitHubStatistics = ({ username }) => {
             shadow="md"
           />
         </Flex>
-        <Flex direction={'column'} alignItems={'center'} justifyContent={'center'} gap={'8px'}>
+        <Flex direction={'column'} alignItems={'center'} justifyContent={'center'} gap={'8px'}  data-aos="zoom-in-up" cursor={'pointer'}>
           <Heading as="h3" size="lg" >
             Current Stats
           </Heading>

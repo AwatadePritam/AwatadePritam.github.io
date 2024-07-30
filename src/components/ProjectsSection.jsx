@@ -60,8 +60,8 @@ const ProjectsSection = () => {
         // Add more projects as needed
       ];
   return (
-    <Flex w={"100%"} justifyContent={"center"} alignItems={"center"} >
-       <Flex p={5}width={"80%"} direction={"column"} alignItems={"center"} justifyContent={"center"}>
+    <Flex w={"100%"} justifyContent={"center"} alignItems={"center"} cursor={'pointer'}>
+       <Flex p={5}width={"80%"} direction={"column"} alignItems={"center"} justifyContent={"center"}data-aos="zoom-in" >
       <Heading as="h2" size="xl" mb={5} textAlign="center">
         Projects
       </Heading>

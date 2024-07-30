@@ -52,7 +52,7 @@ const SkillsSection = () => {
         <Heading size={'lg'}>
           Frontend 
         </Heading>
-        <Flex  gap={'50px'}  flexWrap={'wrap'} justifyContent={'center'}  >
+        <Flex  gap={'50px'}  flexWrap={'wrap'} justifyContent={'center'} data-aos="fade-down" >
                   {skills.map((skill) =>{
           if(skill.category==='Frontend'){
             return(
@@ -73,7 +73,7 @@ const SkillsSection = () => {
         <Heading size={'lg'}>
           Backend 
         </Heading>
-        <Flex  gap={'50px'}  flexWrap={'wrap'} justifyContent={'center'}  >
+        <Flex  gap={'50px'}  flexWrap={'wrap'} justifyContent={'center'} data-aos="fade-right" >
                   {skills.map((skill) =>{
           if(skill.category==='Backend'){
             return(
@@ -94,7 +94,7 @@ const SkillsSection = () => {
         <Heading size={'lg'}>
           State Management 
         </Heading>
-      <Flex gap={'50px'}  flexWrap={'wrap'} justifyContent={'center'}  >
+      <Flex gap={'50px'}  flexWrap={'wrap'} justifyContent={'center'} data-aos="fade-left"  >
         {skills.map((skill) =>{
           if(skill.category==='StateManagement'){
             return(
@@ -115,7 +115,7 @@ const SkillsSection = () => {
         <Heading size={'lg'}>
           Version Control
         </Heading>
-      <Flex  gap={'50px'}  flexWrap={'wrap'} justifyContent={'center'}  >
+      <Flex  gap={'50px'}  flexWrap={'wrap'} justifyContent={'center'}  data-aos="fade-up" >
         {skills.map((skill) =>{
           if(skill.category==='VersionControl'){
             return(

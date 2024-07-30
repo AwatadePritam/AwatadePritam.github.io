@@ -10,13 +10,13 @@ const MiniDownload = ({onClose}) => {
 
   const handleDownload = () => {
     const viewLink = document.createElement('a');
-    viewLink.href = 'https://drive.google.com/file/d/1VZR9YyDVez6J5Vl5U6PsPEQ_5asXnRf9/view?usp=sharing'; // View link
+    viewLink.href = 'https://drive.google.com/file/d/1IV7FPtRyA3fsGwiFLvPnL6IVv1bl0mej/view?usp=sharing'; // View link
     viewLink.target = '_blank';
     viewLink.click();
 
     const downloadLink = document.createElement('a');
-    downloadLink.href = 'https://drive.google.com/uc?export=download&id=1VZR9YyDVez6J5Vl5U6PsPEQ_5asXnRf9'; // Direct download link
-    downloadLink.download = 'Shrihari_Jadhav_resume.pdf';
+    downloadLink.href = 'https://drive.google.com/uc?export=download&id=1IV7FPtRyA3fsGwiFLvPnL6IVv1bl0mej'; // Direct download link
+    downloadLink.download = 'PritamYuvarajAwatadeResume.pdf';
     downloadLink.click();
     onClose();
   };

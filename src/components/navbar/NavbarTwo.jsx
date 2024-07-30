@@ -35,7 +35,7 @@ const NavbarTwo = () => {
     <Flex className='glass' w={'100%'}   justify='center'  position={'fixed'} top={'0px'}  zIndex={10}>
         <Flex   justify='space-between' align='center' w={['90%','90%','80%','80%']}>
                 <Flex>
-                <Text _hover={{ cursor: 'pointer' }} padding={['1rem 1rem', '1rem', '1rem 0rem', '1rem 0rem', '1rem 0rem', '1rem 0rem']} fontSize={['md', 'lg', 'xl', 'xl']}>Portfolio</Text>
+                <Text _hover={{ cursor: 'pointer' }}  color={useColorModeValue("#EDBB3C", "#EDBB3C")} padding={['1rem 1rem', '1rem', '1rem 0rem', '1rem 0rem', '1rem 0rem', '1rem 0rem']} fontSize={['md', 'lg', '2xl', '2xl']}>Portfolio</Text>
                 </Flex>
               
                 <Flex  justifyContent={'center'} alignItems={'center'}  gap={'20px'}>
@@ -57,7 +57,7 @@ const NavbarTwo = () => {
                     <DrawerContent>
                     <DrawerHeader borderBottomWidth='1px'>
                         <Flex justifyContent={'space-between'}>
-                            <Text _hover={{ cursor: 'pointer' }}>Shrihari's Portfolio</Text>
+                            <Text _hover={{ cursor: 'pointer' }}>Pritam's Portfolio</Text>
                             <IconButton 
                             aria-label="Close"
                             variant={'ghost'}
