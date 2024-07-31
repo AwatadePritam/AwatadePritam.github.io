@@ -56,7 +56,7 @@ const ContactSection = () => {
   };
 
   return (
-    <Flex id="contact-me"   mx="auto" w={"100%"} padding={'30px 0px'} justifyContent={"center"} alignItems={"center"} direction={"column"} p={"10px"} data-aos="slide-up">
+    <Flex id="contact-me"   mx="auto" w={"100%"} padding={'30px 0px'} justifyContent={"center"} alignItems={"center"} direction={"column"} p={"10px"} data-aos="fade-up">
       <Heading as="h2" size="xl" mb={6} textAlign="center">
         Contact Me
       </Heading>

@@ -30,7 +30,7 @@ function App() {
   }, []);
 
   return (
-    <Flex direction={'column'} w={'100%'} justifyContent={'center'} alignItems={'center'} overflowX={'hidden'}>
+    <Flex className='myScrollbar' direction={'column'} w={'100%'} justifyContent={'center'} alignItems={'center'} overflowX={'hidden'}>
       <NavbarTwo />
       <Box className='section'  id="home">
         <Herosection />
