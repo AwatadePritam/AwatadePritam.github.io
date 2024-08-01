@@ -7,7 +7,7 @@ const Experience = () => {
   const experiences = [
     {
       title: 'Full Stack Web Developer',
-      date: 'Oct 2023 - Present',
+      date: 'Oct 2023 - Oct 2024',
       institution: "Masai School",
       degree: '',
       grade: '',
