@@ -3,6 +3,8 @@ import emailjs from 'emailjs-com';
 import {
   Box, Heading, FormControl, FormLabel, Input, Textarea, Button, Stack, useToast, Text, Flex, useColorMode, Spinner
 } from '@chakra-ui/react';
+import ContactInfo from './ContactInfo';
+import ContactDetails from './ContactDetails';
 
 const ContactSection = () => {
   const { colorMode } = useColorMode();
@@ -57,9 +59,21 @@ const ContactSection = () => {
 
   return (
     <Flex id="contact-me"   mx="auto" w={"100%"} padding={'30px 0px'} justifyContent={"center"} alignItems={"center"} direction={"column"} p={"10px"} data-aos="fade-up">
-      <Heading as="h2" size="xl" mb={6} textAlign="center">
+
+        <Flex>
+        <Heading as="h3" size="lg" mb={6} textAlign="center">
+        Social Presence
+      </Heading>
+     
+        </Flex>
+        <Flex  w={['70%','70%','70%','40%']} p={'30px'} justifyContent={'center'} >
+        <ContactDetails/>
+      </Flex>
+      <Heading as="h2" size="xl" mb={6} textAlign="center" pt={'20px'}>
         Contact Me
       </Heading>
+
+     
 
       <Flex w={["90%", "90%", "90%", "80%"]} gap={'30px'} alignItems={"center"} justifyContent={"center"}  padding={'30px 0px'}  >
         {!emailSent ? (
@@ -89,6 +103,8 @@ const ContactSection = () => {
           </Flex>
         )}
       </Flex>
+      <ContactInfo/>
+      
     </Flex>
   );
 };

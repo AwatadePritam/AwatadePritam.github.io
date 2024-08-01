@@ -35,7 +35,7 @@ const MiniDownload = ({onClose}) => {
     rounded={'lg'}
     fontSize={['md', 'lg', 'xl', 'xl']}
   >
-    <Flex justifyContent={'space-between'} alignItems={'center'}>
+    <Flex justifyContent={'space-between'} alignItems={'center'} className='nav-link resume'>
       <Text>Resume</Text>
       <Box as="span" ml={2}>
         <DownloadIcon />

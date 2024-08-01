@@ -19,21 +19,21 @@ const ProjectCard = ({ image, title,description, liveDemo, githubRepo }) => {
       borderRadius="lg" 
       overflow="hidden" 
       _hover={{ boxShadow: boxShadowColor }} 
-      
+      className='project-card'
       p={5}
     >
       <Image src={image}  borderRadius="md" width={"100%"} height={"200px"}/>
-      <Text mt={2} fontSize="larger" fontWeight="semibold" p={"5px 0px"}>
+      <Text mt={2} fontSize="larger" fontWeight="semibold" p={"5px 0px"} className='project-title'>
         {title}
       </Text>
-      <Text mt={2}  fontWeight="semibold"  p={"5px 0px"}>
+      <Text mt={2}  fontWeight="semibold"  p={"5px 0px"} className='project-description'>
       {description.length > 100 ? `${description.slice(0, 100)}...` :description}
       </Text>
       <Box mt={4} display="flex" justifyContent="space-between">
-        <Button as="a" href={liveDemo} colorScheme="yellow" target="_blank" leftIcon={<ExternalLinkIcon />}>
+        <Button as="a" href={liveDemo} colorScheme="yellow" target="_blank" leftIcon={<ExternalLinkIcon />} className='project-deployed-link'>
           Live Demo
         </Button>
-        <Button as="a" href={githubRepo} colorScheme="gray" target="_blank" leftIcon={<FaGithub />}>
+        <Button as="a" href={githubRepo} colorScheme="gray" target="_blank" leftIcon={<FaGithub />} className='project-github-link'>
           GitHub Repo
         </Button>
       </Box>

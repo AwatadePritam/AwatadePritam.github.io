@@ -34,7 +34,7 @@ const DownloadResumeButton = () => {
     rounded={'lg'}
     fontSize={['md', 'lg', 'lg', 'lg']}
   >
-    <Flex justifyContent={'space-between'} alignItems={'center'}>
+    <Flex justifyContent={'space-between'} alignItems={'center'} className='nav-link resume'>
       <Text>Resume</Text>
       <Box as="span" ml={2}>
         <DownloadIcon />

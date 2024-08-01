@@ -29,7 +29,7 @@ const Herosection = () => {
                 <Flex padding={'40px 0px'} gap={'20px'}  w={['100%','100%','60%','60%']} justifyContent={'center'} alignItems={['center','center','start','start']} flexDirection={'column'}>
                             <Flex justifyContent={'center'} alignItems={['center','center','start','start']}  gap={'0px'} flexDirection={'column'}  w={['100%','100%','90%','90%']}  >
                                         <Text fontWeight={'600'} fontSize={['xl','2xl','2xl','3xl']} >Hello👋, I'm</Text>
-                                        <Text fontWeight={'700'} fontSize={['2xl','4xl','4xl','6xl']} >Pritam Awatade</Text>
+                                        <Text id='user-detail-name' fontWeight={'700'} fontSize={['2xl','4xl','4xl','6xl']} >Pritam Awatade</Text>
                                         <Text fontWeight={'600'} fontSize={['xl','2xl','3xl','4xl']} >
                                         <Typewriter
                                             options={{

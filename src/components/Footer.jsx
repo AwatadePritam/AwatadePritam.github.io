@@ -24,7 +24,7 @@ const Footer = () => {
         >
             Phone
         </Link>
-        <Link href="mailto:mr.pritamawatade@gmail.com" mx={2}>
+        <Link href="mailto:mr.pritamawatade@gmail.com" isExternal mx={2}>
             Email
         </Link>
         <Link href="https://github.com/awatadepritam" isExternal mx={2}>

@@ -20,19 +20,19 @@ const NavbarTwo = () => {
 
 
      const navLinks = [
-        { id: 1, linkName: 'Home', linkId: 'home' },
-        { id: 2, linkName: 'About', linkId: 'about' },
-        { id: 3, linkName: 'Projects', linkId: 'projects' },
-        { id: 4, linkName: 'Experience', linkId: 'experience' },
-        { id: 5, linkName: 'Skills', linkId: 'skills' },
-        { id: 6, linkName: 'Statistics', linkId: 'statistics' },
-        { id: 7, linkName: 'Contact', linkId: 'contact' }
+        { id: 1, linkName: 'Home', linkId: 'home', className:'nav-link home'},
+        { id: 2, linkName: 'About', linkId: 'about', className:'nav-link about' },
+        { id: 3, linkName: 'Projects', linkId: 'projects', className:'nav-link project' },
+        { id: 4, linkName: 'Experience', linkId: 'experience', className:'nav-link experience ' },
+        { id: 5, linkName: 'Skills', linkId: 'skills', className:'nav-link skills' },
+        { id: 6, linkName: 'Statistics', linkId: 'statistics', className:'nav-link stats' },
+        { id: 7, linkName: 'Contact', linkId: 'contact', className:'nav-link contact' }
     ];
     
 
 
   return (
-    <Flex className='glass' w={'100%'}   justify='center'  position={'fixed'} top={'0px'}  zIndex={10}>
+    <Flex className='glass' id='nav-menu' w={'100%'}   justify='center'  position={'fixed'} top={'0px'}  zIndex={10}>
         <Flex   justify='space-between' align='center' w={['90%','90%','80%','80%']}>
                 <Flex>
                 <Text _hover={{ cursor: 'pointer' }}  color={useColorModeValue("#EDBB3C", "#EDBB3C")} padding={['1rem 1rem', '1rem', '1rem 0rem', '1rem 0rem', '1rem 0rem', '1rem 0rem']} fontSize={['md', 'lg', '2xl', '2xl']}>Portfolio</Text>
@@ -42,7 +42,7 @@ const NavbarTwo = () => {
                     <Flex display={['none', 'none', 'none', 'flex']} justifyContent={'center'} alignItems={'center'}  gap={'20px'}>
                         {
                             navLinks.map(item=>(
-                                <SingleNavLink key={item.linkId} linkName={item.linkName} linkId={item.linkId} />
+                                <SingleNavLink key={item.linkId} linkName={item.linkName} linkId={item.linkId} className={item.className} />
                             ))
                         } 
                          
@@ -69,7 +69,7 @@ const NavbarTwo = () => {
                         <Flex direction={'column'}    gap={'20px'}>
                         {
                             navLinks.map((item,index)=>(
-                                <SingleMiniNavLink  onClose={onClose} key={item.linkId} index={index} linkName={item.linkName} linkId={item.linkId} />
+                                <SingleMiniNavLink className={item.className} onClose={onClose} key={item.linkId} index={index} linkName={item.linkName} linkId={item.linkId} />
                             ))
                         } 
                         <MiniDownload  onClose={onClose} />
