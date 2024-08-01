@@ -16,25 +16,7 @@ const Footer = () => {
       >
         <Text mb={{ base: 1, md: 0 }}  >© {new Date().getFullYear()} Pritam Awatade. All rights reserved.</Text>
         
-        <Flex >
-        <Link 
-            href="tel:+919763657894" // Replace with your actual phone number
-            isExternal 
-            mx={2}
-        >
-            Phone
-        </Link>
-        <Link href="mailto:mr.pritamawatade@gmail.com" isExternal mx={2}>
-            Email
-        </Link>
-        <Link href="https://github.com/awatadepritam" isExternal mx={2}>
-            GitHub
-        </Link>
-        <Link href="https://www.linkedin.com/in/pritamawatade/" isExternal mx={2}>
-            LinkedIn
-        </Link>
-          
-        </Flex>
+
       </Flex>
     </Box>
   );
