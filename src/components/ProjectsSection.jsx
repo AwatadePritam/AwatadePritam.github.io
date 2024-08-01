@@ -65,7 +65,7 @@ const ProjectsSection = () => {
       <Heading as="h2" size="xl" mb={5} textAlign="center">
         Projects
       </Heading>
-      <Grid templateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)"]} gap={6} p={'20px '} >
+      <Grid templateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)"]} gap={6}  >
         {projects.map((project, index) => (
           <ProjectCard 
             key={index}
