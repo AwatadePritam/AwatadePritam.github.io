@@ -35,7 +35,7 @@ function App() {
       <Box className='section'  id="home">
         <Herosection />
       </Box>
-      <WhiteSpace />
+      {/* <WhiteSpace /> */}
       <Box   className='section' id="about">
         <AboutMe />
       </Box>

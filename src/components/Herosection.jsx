@@ -24,9 +24,9 @@ const Herosection = () => {
     }
   return (
    
-        <Flex  w={'100%'} justifyContent={'center'} alignItems={'center'} padding={"10px 0px" } minHeight={'90vh'}>
+        <Flex  w={'100%'} justifyContent={'center'} alignItems={'center'} padding={"10px 0px" } minHeight={'90vh'} >
             <Flex  flexDirection={['column','column','row','row']} w={['90%','90%','70%','70%']} justifyContent={'center'} alignItems={'center'} padding={'20px 0px' }  > 
-                <Flex padding={'40px 0px'} gap={'20px'}  w={['100%','100%','60%','60%']} justifyContent={'center'} alignItems={['center','center','start','start']} flexDirection={'column'}>
+                <Flex padding={'40px 0px'} gap={['50px','50px','50px','30px']}  w={['100%','100%','60%','60%']} justifyContent={'center'} alignItems={['center','center','start','start']} flexDirection={'column'}>
                             <Flex justifyContent={'center'} alignItems={['center','center','start','start']}  gap={'0px'} flexDirection={'column'}  w={['100%','100%','90%','90%']}  >
                                         <Text fontWeight={'600'} fontSize={['xl','2xl','2xl','3xl']} >Hello👋, I'm</Text>
                                         <Text id='user-detail-name' fontWeight={'700'} fontSize={['2xl','4xl','4xl','6xl']} >Pritam Awatade</Text>

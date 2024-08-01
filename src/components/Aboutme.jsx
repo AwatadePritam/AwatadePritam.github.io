@@ -3,12 +3,12 @@ import { Badge, Box, Flex, Heading, Image, Text, VStack } from '@chakra-ui/react
 import myPhoto from '../Images/myPhoto.png'
 const Aboutme = () => {
   return (
-    <Flex mx="auto" p={5} direction="column" width="90%" justifyContent={'center'} alignItems={'center'} className='about section'>
+    <Flex mx="auto" p={5} direction="column" width="90%" justifyContent={'center'} alignItems={'center'} className='about section' >
     <Heading as="h2" size="xl" mb={5} textAlign="center">
       About Me
     </Heading>
      <Flex w={"100%"} gap={"30px"} padding={"20px 0px"} direction={['column','column','column','row']}  justifyContent={'center'} alignItems={'center'} >
-        <Flex w={["50%","40%","40%","30%"]}  justifyContent={"center"} alignItems={"center"} data-aos="fade-right">
+        <Flex w={["80%","80%","80%","30%"]}  justifyContent={"center"} alignItems={"center"} data-aos="fade-right">
            <Image id='home-img' src={myPhoto} w={"80%"} />
         </Flex>
         <Flex w={["90%","90%","90%","70%"]} direction={'column'} justifyContent={"center"} alignItems={"center"} data-aos="fade-left">
