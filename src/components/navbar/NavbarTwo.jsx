@@ -17,6 +17,9 @@ const NavbarTwo = () => {
      const { colorMode } = useColorMode();
      const hoverBgColor = useColorModeValue("#EDBB3C", "#EDBB3C");
      const hoverColor = useColorModeValue("#2D3748", "#EDF2F7");
+     const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
 
 
      const navLinks = [
@@ -35,7 +38,7 @@ const NavbarTwo = () => {
     <Flex className='glass' id='nav-menu' w={'100%'}   justify='center'  position={'fixed'} top={'0px'}  zIndex={10}>
         <Flex   justify='space-between' align='center' w={['90%','90%','80%','80%']}>
                 <Flex>
-                <Text _hover={{ cursor: 'pointer' }}  color={useColorModeValue("#EDBB3C", "#EDBB3C")} padding={['1rem 1rem', '1rem', '1rem 0rem', '1rem 0rem', '1rem 0rem', '1rem 0rem']} fontSize={['md', 'lg', '2xl', '2xl']}>Portfolio</Text>
+                <Text _hover={{ cursor: 'pointer' }}  color={useColorModeValue("#EDBB3C", "#EDBB3C")} padding={['1rem 1rem', '1rem', '1rem 0rem', '1rem 0rem', '1rem 0rem', '1rem 0rem']} fontSize={['md', 'lg', '2xl', '2xl']}   onClick={scrollToTop}>Portfolio</Text>
                 </Flex>
               
                 <Flex  justifyContent={'center'} alignItems={'center'}  gap={'20px'}>
