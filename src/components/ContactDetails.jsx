@@ -7,7 +7,7 @@ const ContactDetails = () => {
     const { colorMode } = useColorMode();
     const boxShadowColor = colorMode === 'dark' ? '0 4px 12px rgba(255, 255, 255, 0.4)' : '0 4px 12px rgba(0, 0, 0, 0.4)';
   return (
-    <Flex   fontSize={'xl'} direction={'column'} justifyContent={'left'} alignItems={'left'} gap={'20px'} p={'40px'} shadow="md" borderWidth="1px" borderRadius="md"  _hover={{ boxShadow: boxShadowColor }}>
+    <Flex   fontSize={'xl'} direction={'column'} justifyContent={'left'} alignItems={'left'} gap={'20px'} p={'40px'} shadow="md" borderWidth="1px" borderRadius="md"  _hover={{ boxShadow: boxShadowColor }} data-aos="fade-up">
         <Flex alignItems={'center'} gap={'10px'}>
         <Icon as={FaEnvelope} boxSize={6} />
         <Link href="mailto:pritamawatade@gmail.com" isExternal mx={2} id='contact-email'>
