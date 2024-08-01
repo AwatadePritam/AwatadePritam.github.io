@@ -10,12 +10,12 @@ const MiniDownload = ({onClose}) => {
 
   const handleDownload = () => {
     const viewLink = document.createElement('a');
-    viewLink.href = 'https://drive.google.com/file/d/1IV7FPtRyA3fsGwiFLvPnL6IVv1bl0mej/view?usp=sharing'; // View link
+    viewLink.href = 'https://drive.google.com/file/d/1y1DX9-j-O3EN-JuGAbO-O-YZmW2uhm-j/view?usp=sharing'; // View link
     viewLink.target = '_blank';
     viewLink.click();
 
     const downloadLink = document.createElement('a');
-    downloadLink.href = 'https://drive.google.com/uc?export=download&id=1IV7FPtRyA3fsGwiFLvPnL6IVv1bl0mej'; // Direct download link
+    downloadLink.href = 'https://drive.google.com/uc?export=download&id=1y1DX9-j-O3EN-JuGAbO-O-YZmW2uhm-j'; // Direct download link
     downloadLink.download = 'PritamYuvarajAwatadeResume.pdf';
     downloadLink.click();
     onClose();
