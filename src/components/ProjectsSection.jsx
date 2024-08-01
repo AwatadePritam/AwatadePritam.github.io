@@ -14,7 +14,7 @@ const ProjectCard = ({ image, title,description, liveDemo, githubRepo }) => {
 
   return (
     <Box 
-      width={"450px"}
+     
       borderWidth="1px" 
       borderRadius="lg" 
       overflow="hidden" 
@@ -61,11 +61,11 @@ const ProjectsSection = () => {
       ];
   return (
     <Flex w={"100%"} justifyContent={"center"} alignItems={"center"} cursor={'pointer'}>
-       <Flex p={5}width={"80%"} direction={"column"} alignItems={"center"} justifyContent={"center"}data-aos="zoom-in" >
+       <Flex p={5} width={'90%'} direction={"column"} alignItems={"center"} justifyContent={"center"}data-aos="zoom-in" >
       <Heading as="h2" size="xl" mb={5} textAlign="center">
         Projects
       </Heading>
-      <Grid templateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)"]} gap={6} >
+      <Grid templateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)"]} gap={6} p={'20px '} >
         {projects.map((project, index) => (
           <ProjectCard 
             key={index}
